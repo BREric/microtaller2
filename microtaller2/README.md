@@ -65,7 +65,6 @@ habilitar una bash terminal en el job y poner las siguientes lineas de codigo>
 
 docker build --tag jenkins-container --pull .
 docker-compose up -d --no-recreate --build
-
-sleep 10
-
+npm ci
+npx cucumber-js tests/features --require tests/step_definitions --format json:./reports/cucumber_report.json && node generate_report.js
 npm run test
