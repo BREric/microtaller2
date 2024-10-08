@@ -5,7 +5,7 @@ const Ajv = require('ajv');
 const ajv = new Ajv();
 require('ajv-formats')(ajv);
 const apiURL = require('../support/supertestConfig');
-const apiSchema = require('../../schemas/apiResponsesSchema.json');
+const apiSchema = require('../schemas/apiResponsesSchema.json');
 
 let response;
 let loginData = {};

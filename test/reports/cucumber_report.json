@@ -15,11 +15,11 @@
             "line": 4,
             "name": "Soy un usuario autenticado",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:14"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 56886700
+              "duration": 9117799
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "invoco el servicio de actualización del usuario",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:28"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 4384099
+              "duration": 6666100
             }
           },
           {
@@ -41,11 +41,12 @@
             "line": 6,
             "name": "un código de estado 204",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:35"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 29039800
+              "status": "failed",
+              "duration": 5333800,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n401 !== 204\n\n    + expected - actual\n\n    -401\n    +204\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\actualizar_usuario_steps.js:36:12)"
             }
           }
         ],
@@ -65,11 +66,11 @@
             "line": 9,
             "name": "Soy un usuario autenticado pero ingreso a una cuenta que no es mía",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:49"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 57603399
+              "duration": 6928899
             }
           },
           {
@@ -78,11 +79,11 @@
             "line": 10,
             "name": "realizo la solicitud de actualización de un usuario diferente al mío",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:61"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 4695799
+              "duration": 6964900
             }
           },
           {
@@ -91,11 +92,12 @@
             "line": 11,
             "name": "obtengo un código de estado 403 que indica que no tengo permisos",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:68"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:68"
             },
             "result": {
-              "status": "passed",
-              "duration": 1464899
+              "status": "failed",
+              "duration": 468499,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n401 !== 403\n\n    + expected - actual\n\n    -401\n    +403\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\actualizar_usuario_steps.js:69:12)"
             }
           }
         ],
@@ -115,11 +117,11 @@
             "line": 14,
             "name": "Soy un usuario no autenticado",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:80"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:80"
             },
             "result": {
               "status": "passed",
-              "duration": 79499
+              "duration": 142100
             }
           },
           {
@@ -128,11 +130,11 @@
             "line": 15,
             "name": "realizo la solicitud de actualización del usuario",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:84"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:84"
             },
             "result": {
               "status": "passed",
-              "duration": 3465900
+              "duration": 6060199
             }
           },
           {
@@ -141,11 +143,11 @@
             "line": 16,
             "name": "obtengo un código de estado 401",
             "match": {
-              "location": "tests\\step_definitions\\actualizar_usuario_steps.js:90"
+              "location": "app\\step_definitions\\actualizar_usuario_steps.js:90"
             },
             "result": {
               "status": "passed",
-              "duration": 955899
+              "duration": 67288700
             }
           }
         ],
@@ -158,7 +160,7 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios actualizar su información",
     "tags": [],
-    "uri": "tests\\features\\actualizar_Usuario.feature"
+    "uri": "app\\features\\actualizar_Usuario.feature"
   },
   {
     "description": "",
@@ -176,11 +178,11 @@
             "line": 4,
             "name": "Tengo un nombre de usuario, email y contraseña válidos",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:14"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 292500
+              "duration": 679399
             }
           },
           {
@@ -189,11 +191,11 @@
             "line": 5,
             "name": "invoco el servicio de creación de usuario con los datos",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:24"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 57454700
+              "duration": 99696899
             }
           },
           {
@@ -202,11 +204,11 @@
             "line": 6,
             "name": "obtengo un código de estado 201",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:30"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 14042100
+              "duration": 34076300
             }
           }
         ],
@@ -226,11 +228,11 @@
             "line": 9,
             "name": "Tengo un nombre de usuario ya está registrado",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:42"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 386399
+              "duration": 827800
             }
           },
           {
@@ -239,11 +241,11 @@
             "line": 10,
             "name": "invoco el servicio de creación de usuario con el nombre de usuario",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:50"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:50"
             },
             "result": {
               "status": "passed",
-              "duration": 4583500
+              "duration": 95248200
             }
           },
           {
@@ -252,11 +254,12 @@
             "line": 11,
             "name": "obtengo un código de estado 409 indicando conflicto",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:56"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:56"
             },
             "result": {
-              "status": "passed",
-              "duration": 143500
+              "status": "failed",
+              "duration": 650599,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n201 !== 409\n\n    + expected - actual\n\n    -201\n    +409\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\crear_usuario_steps.js:57:12)"
             }
           },
           {
@@ -265,11 +268,11 @@
             "line": 12,
             "name": "un mensaje que indique que el nombre de usuario ya está en uso",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:60"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 1348199
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -289,11 +292,11 @@
             "line": 15,
             "name": "No ingreso un nombre de usuario",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:71"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 118899
+              "duration": 232500
             }
           },
           {
@@ -302,11 +305,11 @@
             "line": 16,
             "name": "invoco el servicio de creación de usuario",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:79"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:79"
             },
             "result": {
               "status": "passed",
-              "duration": 4007900
+              "duration": 8172900
             }
           },
           {
@@ -315,11 +318,11 @@
             "line": 17,
             "name": "obtengo un código de estado 400 indicando error en la solicitud",
             "match": {
-              "location": "tests\\step_definitions\\crear_usuario_steps.js:85"
+              "location": "app\\step_definitions\\crear_usuario_steps.js:85"
             },
             "result": {
               "status": "passed",
-              "duration": 211099
+              "duration": 2086100
             }
           }
         ],
@@ -332,7 +335,7 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios crear un nuevo usuario",
     "tags": [],
-    "uri": "tests\\features\\crear_Usuario.feature"
+    "uri": "app\\features\\crear_Usuario.feature"
   },
   {
     "description": "",
@@ -350,11 +353,11 @@
             "line": 5,
             "name": "Soy un usuario no autenticado para eliminar mi cuenta",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:33"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 73100
+              "duration": 145000
             }
           },
           {
@@ -363,11 +366,11 @@
             "line": 6,
             "name": "invoco el servicio de eliminación de mi cuenta sin autenticar",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:37"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 4345699
+              "duration": 7759500
             }
           },
           {
@@ -376,11 +379,11 @@
             "line": 7,
             "name": "obtengo un código de estado 401 al intentar eliminar mi cuenta sin autenticar",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:43"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 11810100
+              "duration": 21861900
             }
           }
         ],
@@ -400,11 +403,11 @@
             "line": 11,
             "name": "Soy un usuario autenticado para eliminar otra cuenta",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:55"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 59843399
+              "duration": 97145500
             }
           },
           {
@@ -413,11 +416,11 @@
             "line": 12,
             "name": "realizo la solicitud de eliminación de una cuenta diferente",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:69"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:69"
             },
             "result": {
               "status": "passed",
-              "duration": 3785899
+              "duration": 6675100
             }
           },
           {
@@ -426,11 +429,12 @@
             "line": 13,
             "name": "obtengo un código de estado 403 al intentar eliminar una cuenta diferente",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:76"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:76"
             },
             "result": {
-              "status": "passed",
-              "duration": 684600
+              "status": "failed",
+              "duration": 542400,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected status code 403 but got 404\n    + expected - actual\n\n    -404\n    +403\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\eliminar_usuario_steps.js:77:12)"
             }
           }
         ],
@@ -450,11 +454,11 @@
             "line": 17,
             "name": "Soy un usuario autenticado para eliminar mi cuenta",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:88"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:88"
             },
             "result": {
               "status": "passed",
-              "duration": 57967599
+              "duration": 90520299
             }
           },
           {
@@ -463,11 +467,11 @@
             "line": 18,
             "name": "invoco el servicio de eliminación de mi cuenta",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:101"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:101"
             },
             "result": {
               "status": "passed",
-              "duration": 4468200
+              "duration": 8453499
             }
           },
           {
@@ -476,11 +480,11 @@
             "line": 19,
             "name": "obtengo un código de estado 204 que me indica que fue exitosa",
             "match": {
-              "location": "tests\\step_definitions\\eliminar_usuario_steps.js:108"
+              "location": "app\\step_definitions\\eliminar_usuario_steps.js:108"
             },
             "result": {
               "status": "passed",
-              "duration": 166700
+              "duration": 226799
             }
           }
         ],
@@ -493,7 +497,7 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios eliminar su cuenta",
     "tags": [],
-    "uri": "tests\\features\\eliminar_Usuario.feature"
+    "uri": "app\\features\\eliminar_Usuario.feature"
   },
   {
     "description": "",
@@ -511,11 +515,11 @@
             "line": 4,
             "name": "Soy un usuario que ha olvidado su contraseña",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:14"
+              "location": "app\\step_definitions\\forgot_password_steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 76700
+              "duration": 152699
             }
           },
           {
@@ -524,11 +528,11 @@
             "line": 5,
             "name": "invoco el servicio de restablecimiento de contraseña con mi email",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:18"
+              "location": "app\\step_definitions\\forgot_password_steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 4048699
+              "duration": 7700700
             }
           },
           {
@@ -537,12 +541,12 @@
             "line": 6,
             "name": "obtengo un mensaje que indica que se ha enviado un email con instrucciones para restablecer la contraseña",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:25"
+              "location": "app\\step_definitions\\forgot_password_steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 625000,
-              "error_message": "AssertionError [ERR_ASSERTION]: Expected status code 200 but got 404\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (C:\\microtaller\\taller2\\microtaller2\\tests\\step_definitions\\forgot_password_steps.js:26:12)"
+              "duration": 696399,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected status code 200 but got 404\n    + expected - actual\n\n    -404\n    +200\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\forgot_password_steps.js:26:12)"
             }
           },
           {
@@ -551,7 +555,7 @@
             "line": 7,
             "name": "un código de estado 200 que indica que el correo fue enviado",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:38"
+              "location": "app\\step_definitions\\forgot_password_steps.js:38"
             },
             "result": {
               "status": "skipped",
@@ -575,11 +579,11 @@
             "line": 10,
             "name": "soy un usuario que ha olvidado su contraseña",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:43"
+              "location": "app\\step_definitions\\forgot_password_steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 79299
+              "duration": 190399
             }
           },
           {
@@ -588,11 +592,11 @@
             "line": 11,
             "name": "invoco el servicio de restablecimiento de contraseña con un email que no existe",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:47"
+              "location": "app\\step_definitions\\forgot_password_steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 4546100
+              "duration": 9133899
             }
           },
           {
@@ -601,11 +605,11 @@
             "line": 12,
             "name": "obtengo un código de estado 404 indicando que el usuario no fue encontrado",
             "match": {
-              "location": "tests\\step_definitions\\forgot_password_steps.js:54"
+              "location": "app\\step_definitions\\forgot_password_steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 8888800
+              "duration": 20310099
             }
           }
         ],
@@ -618,7 +622,7 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios restablecer su contraseña",
     "tags": [],
-    "uri": "tests\\features\\forgot_Password.feature"
+    "uri": "app\\features\\forgot_Password.feature"
   },
   {
     "description": "",
@@ -636,11 +640,11 @@
             "line": 4,
             "name": "soy un usuario registrado en el sistema",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:14"
+              "location": "app\\step_definitions\\login_steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 73200
+              "duration": 118300
             }
           },
           {
@@ -649,11 +653,11 @@
             "line": 5,
             "name": "realizo una solicitud POST a login",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:21"
+              "location": "app\\step_definitions\\login_steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 58386599
+              "duration": 7751400
             }
           },
           {
@@ -662,11 +666,12 @@
             "line": 6,
             "name": "obtengo un token de autenticación",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:28"
+              "location": "app\\step_definitions\\login_steps.js:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 10642100
+              "status": "failed",
+              "duration": 366999,
+              "error_message": "AssertionError [ERR_ASSERTION]: No se recibió un token en la respuesta.\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\login_steps.js:29:5)"
             }
           },
           {
@@ -675,11 +680,11 @@
             "line": 7,
             "name": "el código de estado debe ser 200",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:39"
+              "location": "app\\step_definitions\\login_steps.js:39"
             },
             "result": {
-              "status": "passed",
-              "duration": 135299
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -699,11 +704,11 @@
             "line": 10,
             "name": "No soy un usuario registrado en el sistema",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:44"
+              "location": "app\\step_definitions\\login_steps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 89899
+              "duration": 181100
             }
           },
           {
@@ -712,11 +717,11 @@
             "line": 11,
             "name": "se envía la solicitud de login con credenciales incorrectas",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:51"
+              "location": "app\\step_definitions\\login_steps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 6021600
+              "duration": 6704999
             }
           },
           {
@@ -725,11 +730,11 @@
             "line": 12,
             "name": "obtengo un código de estado 401 indicando credenciales inválidas",
             "match": {
-              "location": "tests\\step_definitions\\login_steps.js:58"
+              "location": "app\\step_definitions\\login_steps.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 1136899
+              "duration": 18951100
             }
           }
         ],
@@ -742,7 +747,7 @@
     "keyword": "Feature",
     "name": "La API debe permitir a los usuarios registrados iniciar sesión",
     "tags": [],
-    "uri": "tests\\features\\login.feature"
+    "uri": "app\\features\\login.feature"
   },
   {
     "description": "",
@@ -760,11 +765,12 @@
             "line": 4,
             "name": "soy un usuario autenticado",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:15"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 59128300
+              "status": "failed",
+              "duration": 9692599,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n401 !== 200\n\n    + expected - actual\n\n    -401\n    +200\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\obtener_usuario_steps.js:24:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
@@ -773,11 +779,11 @@
             "line": 5,
             "name": "hago una solicitud GET a users seguido de mi id",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:29"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:29"
             },
             "result": {
-              "status": "passed",
-              "duration": 4096599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -786,11 +792,11 @@
             "line": 6,
             "name": "obtengo los datos de mi usuario",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:37"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 19865700
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -799,11 +805,11 @@
             "line": 7,
             "name": "obtengo un código de estado 200 al obtener los detalles del usuario",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:50"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:50"
             },
             "result": {
-              "status": "passed",
-              "duration": 168499
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -823,11 +829,12 @@
             "line": 11,
             "name": "soy un usuario autenticado",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:15"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 57819399
+              "status": "failed",
+              "duration": 7682000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n401 !== 200\n\n    + expected - actual\n\n    -401\n    +200\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\obtener_usuario_steps.js:24:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
@@ -836,11 +843,11 @@
             "line": 12,
             "name": "realizo una solicitud GET a users seguido de un id de usuario diferente al mío",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:55"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 3803499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -849,11 +856,11 @@
             "line": 13,
             "name": "obtengo un código de estado 403 indicando que no tengo permiso para acceder a la información de otro usuario",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuario_steps.js:62"
+              "location": "app\\step_definitions\\obtener_usuario_steps.js:62"
             },
             "result": {
-              "status": "passed",
-              "duration": 890899
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -866,7 +873,7 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios obtener detalles de su propio usuario",
     "tags": [],
-    "uri": "tests\\features\\obtener_Usuario.feature"
+    "uri": "app\\features\\obtener_Usuario.feature"
   },
   {
     "description": "",
@@ -884,11 +891,12 @@
             "line": 4,
             "name": "Soy un usuario autenticado y listar los usuarios",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:14"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 60436600
+              "status": "failed",
+              "duration": 9413899,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n401 !== 200\n\n    + expected - actual\n\n    -401\n    +200\n\n    at World.<anonymous> (C:\\microtaller\\microservices\\test\\app\\step_definitions\\obtener_usuarios_steps.js:23:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
             }
           },
           {
@@ -897,11 +905,11 @@
             "line": 5,
             "name": "realizo una solicitud GET a users seguido de page=1&limit=20",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:27"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 3502700
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -910,11 +918,11 @@
             "line": 6,
             "name": "obtengo una lista con la información de otros usuarios",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:34"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:34"
             },
             "result": {
-              "status": "passed",
-              "duration": 7563500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -923,11 +931,11 @@
             "line": 7,
             "name": "obtengo un código de estado 200 que me indica que la solicitud fue exitosa",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:46"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:46"
             },
             "result": {
-              "status": "passed",
-              "duration": 77500
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -947,11 +955,11 @@
             "line": 11,
             "name": "No estoy autenticado",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:51"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 52900
+              "duration": 145800
             }
           },
           {
@@ -960,11 +968,11 @@
             "line": 12,
             "name": "hago una solicitud GET a users seguido de page=1&limit=20",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:55"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:55"
             },
             "result": {
               "status": "passed",
-              "duration": 3838699
+              "duration": 6648699
             }
           },
           {
@@ -973,11 +981,11 @@
             "line": 13,
             "name": "obtengo un codigo de estado 401",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:61"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 134499
+              "duration": 205100
             }
           },
           {
@@ -986,11 +994,11 @@
             "line": 14,
             "name": "un mensaje que indique que no tengo autorización",
             "match": {
-              "location": "tests\\step_definitions\\obtener_usuarios_steps.js:65"
+              "location": "app\\step_definitions\\obtener_usuarios_steps.js:65"
             },
             "result": {
               "status": "passed",
-              "duration": 833300
+              "duration": 22160700
             }
           }
         ],
@@ -1003,6 +1011,6 @@
     "keyword": "Feature",
     "name": "La API permite a los usuarios obtener una lista de los usuarios existentes",
     "tags": [],
-    "uri": "tests\\features\\obtener_Usuarios.feature"
+    "uri": "app\\features\\obtener_Usuarios.feature"
   }
 ]

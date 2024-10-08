@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"microtaller2/handlers"
-	"microtaller2/middleware"
+	"app/core/handlers"
+	"app/core/middleware"
 
 	"github.com/gin-gonic/gin"
 )

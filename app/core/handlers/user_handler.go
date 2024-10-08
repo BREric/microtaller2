@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"microtaller2/config"
-	"microtaller2/models"
-	"microtaller2/utils"
+	"app/configurations/config"
+	"app/core/utils"
+	"app/models"
 
 	"github.com/dgrijalva/jwt-go"
 	"go.mongodb.org/mongo-driver/bson"

@@ -1,4 +1,4 @@
-module microtaller2
+module app
 
 go 1.23
 
