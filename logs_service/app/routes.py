@@ -1,9 +1,12 @@
+# app/routes.py
 from flask import Blueprint, request, jsonify
+from app import db  # Importar `db` desde `app` para que esté disponible en el archivo
 from .models import LogModel
 
+# Define el blueprint
 log_blueprint = Blueprint('log_blueprint', __name__)
 
-# Asumiendo que tenemos la base de datos ya inicializada en el objeto `db`
+# Crear una instancia de LogModel usando la base de datos importada
 logs_model = LogModel(db)
 
 @log_blueprint.route('/logs', methods=['POST'])

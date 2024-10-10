@@ -11,7 +11,7 @@ services:
       - microtaller_network
 
   api:
-    build: ./microtaller2
+    build: ./app
     container_name: go_api_container
     ports:
       - "8080:8080"
